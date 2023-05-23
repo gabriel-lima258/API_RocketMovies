@@ -1,14 +1,11 @@
 const { Router } = require("express");
 
-const NotesController = require("../controllers/NotesController");
+const TagsController = require("../controllers/TagsController");
 
-const notesRoutes = Router();
+const tagsRoutes = Router();
 
-const notesController = new NotesController();
+const tagsController = new TagsController();
 
-notesRoutes.get("/", notesController.index); // listar
-notesRoutes.post("/:user_id", notesController.create); // criar
-notesRoutes.get("/:id", notesController.show); // mostrar
-notesRoutes.delete("/:id", notesController.delete); // deletar
+tagsRoutes.get("/:user_id", tagsController.index); // listar
 
-module.exports = notesRoutes; // exportando
+module.exports = tagsRoutes; // exportando
