@@ -5,7 +5,7 @@
 **Back-end** 
 - Node
 - Express
-
+- Jest
 ## :lock: Instalação do Back-end
 
 Inicia o node
@@ -36,6 +36,8 @@ Inicia o node
   npx knex init
 
   npm install jsonwebtoken // json web tokens
+
+  npx jest init
   
 ```
     
